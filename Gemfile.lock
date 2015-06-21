@@ -24,3 +24,6 @@ DEPENDENCIES
   minitest (~> 5.0)
   rake
   rspec
+
+BUNDLED WITH
+   1.10.4

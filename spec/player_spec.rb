@@ -1,5 +1,5 @@
-require './lib/player'
-
-describe Player do
-
-end
+# require './lib/player'
+#
+# describe Player do
+#
+# end

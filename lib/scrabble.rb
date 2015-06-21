@@ -1,6 +1,20 @@
 class Scrabble
   def score(word)
-    0
+    if !word.nil?
+      letter_scores = word.each_char.map do |char|
+        self.point_values[char.upcase]
+      end
+
+      word_score = letter_scores.reduce(:+)
+
+      if word_score.nil?
+        0
+      else
+        word_score
+      end
+    else
+      0
+    end
   end
 
   def point_values
@@ -15,3 +29,8 @@ class Scrabble
     }
   end
 end
+
+# game = Scrabble.new
+# puts game.score("hello")
+# puts game.score("")
+# puts game.score(nil)
